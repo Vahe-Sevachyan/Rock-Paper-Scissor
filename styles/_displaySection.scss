@@ -23,8 +23,6 @@
 .computer-display,
 .player-display,
 .roundWinnerContainer {
-  // justify-content: center;
-  // border: solid white 1px;
   text-align: center;
   margin: auto;
   width: 180px;
@@ -66,13 +64,10 @@
   margin: auto;
   margin-top: 20px;
   width: 500px;
-  //   border: solid white;
 }
 #paper,
 #scissor,
 #rock {
-  // color: blue;
-  // border: solid #2d86aa;
   padding: 60px;
   border-radius: 50%;
 }
@@ -84,7 +79,7 @@
   justify-content: center;
   background-position: center;
   background-repeat: no-repeat;
-  // background-color: #cecaca;
+
   font-size: 0px;
 }
 #rock {
