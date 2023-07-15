@@ -1,0 +1,356 @@
+/**
+ * 1. Correct the line height in all browsers.
+ * 2. Prevent adjustments of font size after orientation changes in iOS.
+ */
+@import url("https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@400;600;700&family=Plus+Jakarta+Sans:wght@500;800&display=swap");
+html {
+  line-height: 1.15; /* 1 */
+  -webkit-text-size-adjust: 100%; /* 2 */
+  -webkit-tap-highlight-color: transparent;
+}
+
+/* Sections
+   ========================================================================== */
+/**
+ * Remove the margin in all browsers.
+ */
+body {
+  margin: 0;
+  scrollbar-width: none;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Remove the default vertical scrollbar in IE 10+.
+ */
+textarea {
+  overflow: auto;
+}
+
+/* Attributes &amp; states
+   ========================================================================== */
+/**
+ * Add the correct box sizing in Firefox.
+ * 1. Include the correct width and height in IE 8.
+ * 2. Include the correct box sizing in IE 8.
+ * 3. Include the correct box sizing in IE 11.
+ */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+/**
+ * 1. Use the user's configured `font-family` for monospace fonts.
+ * 2. Correct the odd `em` font sizing in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: ui-monospace, SFMono-Regular, Consolas, "Liberation Mono", Menlo, monospace;
+  font-size: 1em; /* 2 */
+}
+
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove the border on images inside links in IE 10+.
+ */
+img {
+  border-style: none;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * 1. Change the font styles in all browsers.
+ * 2. Remove the margin in Firefox and Safari.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  font-family: inherit; /* 1 */
+  font-size: 100%; /* 1 */
+  line-height: 1.15; /* 1 */
+  margin: 0; /* 2 */
+}
+
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+button,
+input {
+  /* 1 */
+  overflow: visible;
+}
+
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/**
+ * Remove the inheritance of text transform in Edge, Firefox, and IE.
+ * 1. Remove the inheritance of text transform in Firefox.
+ */
+button,
+select {
+  /* 1 */
+  text-transform: none;
+}
+
+/* Responsive images
+   ========================================================================== */
+/**
+ * Show the overflow in IE.
+ * 1. Show the overflow in Edge.
+ */
+img {
+  max-width: 100%;
+  height: auto;
+  vertical-align: middle;
+  border-style: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background on active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * 1. Remove the bottom border in Chrome 57-
+ * 2. Add the correct text decoration in Chrome, Edge, IE, Opera, and Safari.
+ */
+a:active,
+a:hover {
+  outline-width: 0;
+}
+
+/* Tabular data
+   ========================================================================== */
+/**
+ * 1. Remove the table spacing in Firefox and Safari.
+ * 2. Remove the table spacing in Edge 18- and IE.
+ */
+table {
+  border-collapse: collapse; /* 1 */
+  border-spacing: 0; /* 1 */
+}
+
+.main-container {
+  margin: auto;
+}
+
+html {
+  font-family: "Barlow Semi Condensed";
+}
+
+body {
+  background-image: radial-gradient(circle at center, hsl(214, 47%, 23%), hsl(237, 49%, 15%));
+}
+
+.game-display-image {
+  size: 40px;
+}
+
+.score-board-container {
+  display: flex;
+  justify-content: space-between;
+  width: 550px;
+  margin: auto;
+  align-items: center;
+  margin-top: 20px;
+  border-radius: 5px;
+  border: 1px gray solid;
+  padding: 15px;
+}
+
+.individual-scores {
+  display: flex;
+}
+
+.player-score-container,
+.computer-score-container,
+.tie-game-score-container {
+  background-color: #fbfbfb;
+  color: #565366;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  border-radius: 5px;
+  margin-left: 10px;
+  font-size: 20px;
+}
+.player-score-container span,
+.computer-score-container span,
+.tie-game-score-container span {
+  font-weight: 500;
+}
+
+.player-score {
+  font-weight: 700;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.display-section {
+  display: flex;
+  justify-content: space-around;
+  width: 650px;
+  color: white;
+  margin: auto;
+  margin-top: 50px;
+}
+.display-section h4 {
+  font-size: 25px;
+}
+
+.player-score-container,
+.tie-game-score-container,
+.computer-score-container {
+  border: solid 3px #1c2d4c;
+  border-radius: 15px;
+}
+
+.computer-display,
+.roundWinnerContainer,
+.player-display {
+  text-align: center;
+  margin: auto;
+  width: 180px;
+  height: 300px;
+  font-size: 15px;
+}
+
+.roundWinnerDisplay {
+  margin-top: 80px;
+  font-weight: 500;
+}
+
+.computer-pick-display,
+.player-pick-display {
+  font-size: 30px;
+  letter-spacing: 0.8px;
+}
+.computer-pick-display::first-letter,
+.player-pick-display::first-letter {
+  text-transform: capitalize;
+}
+
+.restart-button {
+  padding: 12px;
+  font-size: 18px;
+  font-weight: 500;
+  border-radius: 10px;
+  border: none;
+  letter-spacing: 0.8px;
+}
+.restart-button:hover {
+  background-color: rgb(194, 29, 29);
+  color: white;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.selection-section {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: auto;
+  margin-top: 40px;
+  width: 500px;
+}
+
+#paper,
+#scissor,
+#rock {
+  padding: 60px;
+  border-radius: 50%;
+}
+
+#paper,
+#scissor,
+#rock {
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  font-size: 0px;
+}
+
+#rock {
+  border: solid 10px red;
+  background-image: url(../images/icon-rock.jpg);
+  box-shadow: 1px 3.5px 1px 1px rgb(171, 28, 28);
+  margin: 4px 10px 4px 10px;
+}
+#rock:active {
+  box-shadow: 0 0 0 red;
+  margin: 6px 10px 2px 10px;
+}
+#rock:hover {
+  background-color: #cdd7f1;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#paper {
+  background-image: url(../images/icon-paper.jpg);
+  border: solid 10px #4e6bf3;
+  box-shadow: 1px 3.5px 1px 1px #3652cd;
+  margin: 4px 10px 4px 10px;
+}
+#paper:active {
+  box-shadow: 0 0 0 #4e6bf3;
+  margin: 6px 10px 2px 10px;
+}
+#paper:hover {
+  background-color: #cdd7f1;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#scissor {
+  background-image: url(../images/icon-scissors.jpg);
+  border: solid 10px #eaa418;
+  box-shadow: 1px 3.5px 1px 1px #d39518;
+  margin: 4px 10px 4px 10px;
+}
+#scissor:active {
+  box-shadow: 0 0 0 #eaa418;
+  margin: 6px 10px 2px 10px;
+}
+#scissor:hover {
+  background-color: #cdd7f1;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+#paper-rock {
+  display: flex;
+  width: 450px;
+  justify-content: space-between;
+}
+
+#confetti-canvas {
+  top: 0;
+  position: absolute;
+}/*# sourceMappingURL=styles.css.map */

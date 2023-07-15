@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/styles.css" />
+    <title>Rock-Paper-Scissors</title>
+  </head>
+  <body>
+    <div class="main-container">
+      <!-- score board start -->
+      <div class="score-board-container">
+        <div class="game-display-image">
+          <img src="Images/logo.svg" width="120px" alt="" />
+        </div>
+        <div class="individual-scores">
+          <div class="player-score-container">
+            <span> Player </span>
+            <span class="player-score">0</span>
+          </div>
+          <div class="tie-game-score-container">
+            <span>Tie</span>
+            <span class="tie-game-score"> 0</span>
+          </div>
+          <div class="computer-score-container">
+            <span>Computer</span>
+            <span class="computer-score">0</span>
+          </div>
+        </div>
+      </div>
+      <!-- score board end -->
+
+      <!-- display section start -->
+      <div class="display-section">
+        <div class="player-display">
+          <h4>You <br />Picked</h4>
+          <div class="player-image">
+            <img src="" alt="" />
+            <h6 class="player-pick-display"></h6>
+          </div>
+        </div>
+        <div class="roundWinnerContainer">
+          <h4 class="roundWinnerDisplay">Make a selection to start the game</h4>
+          <button class="restart-button">Restart Game</button>
+        </div>
+        <div class="computer-display">
+          <h4>
+            Computer<br />
+            Picked
+          </h4>
+          <div class="computer-image">
+            <img src="" alt="" />
+            <h6 class="computer-pick-display"></h6>
+          </div>
+        </div>
+      </div>
+      <!-- display section end-->
+      <div class="selection-section">
+        <div id="paper-rock">
+          <button id="paper">Paper</button>
+          <button id="scissor">Scissor</button>
+        </div>
+        <button id="rock">Rock</button>
+      </div>
+    </div>
+    <script src="script.js"></script>
+    <script src="confetti.js"></script>
+  </body>
+</html>
