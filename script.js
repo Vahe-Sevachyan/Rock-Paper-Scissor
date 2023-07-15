@@ -18,13 +18,22 @@ const computerScoreContainer = document.querySelector(
 const tieGameScoreContainer = document.querySelector(
   ".tie-game-score-container"
 );
-
+const rulesBtn = document.querySelector(".rulesBtn");
+const rulesModal = document.querySelector(".rulesModal");
+const closeModal = document.querySelector(".closeModal");
 // score trackers
 let playerScore = 0;
 let computerScore = 0;
 let tieGameScore = 0;
 const gameWinnerScore = 5;
 
+rulesBtn.onclick = () => {
+  rulesModal.style.display = "block";
+};
+closeModal.onclick = () => {
+  rulesModal.style.display = "none";
+};
+// function openModal() {}
 // * getComputerChoice() generates a random choice for the computer
 const getComputerChoice = () => {
   let compChoices = ["Rock", "Paper", "Scissor"];

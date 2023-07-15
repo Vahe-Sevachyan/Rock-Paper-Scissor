@@ -5,6 +5,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <!-- <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"
+      rel="stylesheet"
+    /> -->
     <title>Rock-Paper-Scissors</title>
   </head>
   <body>
@@ -12,7 +16,7 @@
       <!-- score board start -->
       <div class="score-board-container">
         <div class="game-display-image">
-          <img src="Images/logo.svg" width="120px" alt="" />
+          <img src="images/logo.svg" width="120px" alt="" />
         </div>
         <div class="individual-scores">
           <div class="player-score-container">
@@ -63,6 +67,18 @@
         </div>
         <button id="rock">Rock</button>
       </div>
+
+      <div class="rulesModal">
+        <div class="modalHeader">
+          <h3>Game Rules</h3>
+          <span class="closeModal">X</span>
+        </div>
+
+        <!-- <i class="fa-solid fa-x"></i> -->
+        <img class="rulesImg" src="images/image-rules.svg" alt="" />
+      </div>
+
+      <button class="rulesBtn">Game Rules</button>
     </div>
     <script src="script.js"></script>
     <script src="confetti.js"></script>

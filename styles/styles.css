@@ -216,7 +216,7 @@ body {
   width: 650px;
   color: white;
   margin: auto;
-  margin-top: 50px;
+  margin-top: 20px;
 }
 .display-section h4 {
   font-size: 25px;
@@ -230,8 +230,8 @@ body {
 }
 
 .computer-display,
-.roundWinnerContainer,
-.player-display {
+.player-display,
+.roundWinnerContainer {
   text-align: center;
   margin: auto;
   width: 180px;
@@ -241,6 +241,7 @@ body {
 
 .roundWinnerDisplay {
   margin-top: 80px;
+  padding-bottom: 30px;
   font-weight: 500;
 }
 
@@ -274,7 +275,7 @@ body {
   justify-content: center;
   flex-wrap: wrap;
   margin: auto;
-  margin-top: 40px;
+  margin-top: 20px;
   width: 500px;
 }
 
@@ -348,6 +349,72 @@ body {
   display: flex;
   width: 450px;
   justify-content: space-between;
+}
+
+.rulesModal {
+  display: none;
+  position: fixed;
+  top: 22%;
+  left: 34%;
+  border-radius: 10px;
+  padding: 15px;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.rulesModal h3 {
+  color: white;
+  font-size: 40px;
+}
+
+.rulesModal span {
+  color: white;
+  font-size: 35px;
+}
+.rulesModal span:hover {
+  cursor: pointer;
+  color: red;
+  transform: scale(1.2);
+}
+.rulesModal span:active {
+  transform: scale(0.8);
+}
+
+.rulesImg {
+  height: 400px;
+  width: 600px;
+}
+
+.rulesBtn {
+  font-size: 30px;
+  width: 160px;
+  margin-left: 88%;
+  display: block;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  border: solid 1px white;
+}
+.rulesBtn:active {
+  transform: scale(0.95);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+.rulesBtn:hover {
+  background-color: black;
+  color: white;
+  border: solid 1px white;
+  transition: 0.5s ease-out;
+  cursor: pointer;
+}
+
+.modalHeader {
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 67%;
+  margin-left: auto;
+  margin-bottom: 30px;
 }
 
 #confetti-canvas {
