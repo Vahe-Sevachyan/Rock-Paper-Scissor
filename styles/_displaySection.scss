@@ -8,7 +8,6 @@
   h4 {
     font-size: 25px;
   }
-  // border: solid white;
 }
 .player-score-container,
 .tie-game-score-container,
@@ -16,10 +15,7 @@
   border: solid 3px #1c2d4c;
   border-radius: 15px;
 }
-// .tie-game-score,
-// .player-score,
-// .computer-score {
-// }
+
 .computer-display,
 .player-display,
 .roundWinnerContainer {
@@ -83,7 +79,6 @@
   font-size: 0px;
 }
 #rock {
-  // margin: auto;
   border: solid 10px red;
   background-image: url(../images/icon-rock.jpg);
   box-shadow: 1px 3.5px 1px 1px rgb(171, 28, 28);
@@ -177,7 +172,6 @@
   &:active {
     transform: scale(0.95);
     transition: 0.3s;
-    // border: none;
     border-radius: 5px;
   }
   &:hover {
